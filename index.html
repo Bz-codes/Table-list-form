@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML-Tables</title>
+    <style>
+      th,
+      td {
+        border-style: inset;
+
+        text-align: center;
+      }
+      th {
+        color: rgb(8, 8, 71);
+      }
+      caption {
+        color: rgb(8, 8, 71);
+      }
+      span {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Table sample -->
+
+    <h1>A CALENDAR</h1>
+    <hr />
+    <br />
+    <table style="width: 40%">
+      <caption>
+        <b>April 2023</b>
+      </caption>
+      <tr>
+        <th>SUN</th>
+        <th>MON</th>
+        <th>TUE</th>
+        <th>WED</th>
+        <th>THUR</th>
+        <th>FRI</th>
+        <th>SAT</th>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+        <td>8</td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>10</td>
+        <td>11</td>
+        <td>12</td>
+        <td>13</td>
+        <td>14</td>
+        <td>15</td>
+      </tr>
+      <tr>
+        <td>16</td>
+        <td>17</td>
+        <td>18</td>
+        <td>19</td>
+        <td>20</td>
+        <td>21</td>
+        <td>22</td>
+      </tr>
+      <tr>
+        <td>23</td>
+        <td>24</td>
+        <td>25</td>
+        <td>26</td>
+        <td>27</td>
+        <td>28</td>
+        <td>29</td>
+      </tr>
+      <tr>
+        <td>30</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+    <br />
+    <br />
+
+    <!-- List sample -->
+
+    <h1>A LIST</h1>
+    <hr />
+    <h3>UNORDERED LIST</h3>
+    <p>Class of Eagle-Green Barbarians</p>
+    <ul style="list-style-type: square">
+      <li>Malcolm</li>
+      <li>Toria</li>
+      <li>Uzoma</li>
+      <li>Daniel</li>
+      <li>David</li>
+      <li>Osho</li>
+      <li>Papa</li>
+      <li>Buzoor</li>
+    </ul>
+    <br />
+    <h3>ORDERED LIST</h3>
+    <p>Class of Eagle-Green Barbarians</p>
+    <ol>
+      <li>Malcolm</li>
+      <li>Toria</li>
+      <li>Uzoma</li>
+      <li>Daniel</li>
+      <li>David</li>
+      <li>Osho</li>
+      <li>Papa</li>
+      <li>Buzoor</li>
+    </ol>
+    <br />
+    <br />
+
+    <!-- Form sample -->
+
+    <h1>A FORM</h1>
+    <hr />
+
+    <div style="width: 50%; margin: 0% 25%">
+      <h2 style="text-align: center">CUSTOMER DETAILS:</h2>
+      <br />
+      <form action="" style="padding: 20px; border: 1px solid black">
+        <label for="name">Full Name</label>
+        <span>*</span>
+        <br /><br />
+        <div>
+          <input type="text" placeholder="First Name" required />
+          <input type="text" placeholder="Last Name" required />
+        </div>
+        <br />
+        <label for="Address">Address</label>
+        <span>*</span>
+        <br />
+        <div>
+          <input
+            type="text"
+            placeholder="Street Address"
+            style="width: 80%"
+            required
+          />
+          <br /><br /><input type="text" placeholder="City" />
+          <input type="text" placeholder="State/Province" />
+        </div>
+        <br />
+        <label for="number">Phone Number</label>
+        <input type="text" placeholder="(000) 000-0000" />
+        <label for="email">E-mail</label>
+        <input type="text" placeholder="ex: email@yahoo.com" />
+        <br /><br /><br />
+        <label for="question">How did you hear about us?</label>
+        <span>*</span>
+        <select name="question" id="question" required>
+          <option value="select ">select</option>
+          <option value="Social Media">Social Media</option>
+          <option value="A friend">A friend</option>
+          <option value="Another brand">Another brand</option>
+        </select>
+        <br />
+        <br />
+        <label for="text">Feedback about us:</label><br />
+        <textarea name="feedback" id="" cols="50" rows="10">
+your feedback...</textarea
+        >
+        <br /><br />
+        <p>Will you be willing to recommend us?</p>
+
+        <input type="radio" />
+        <label for="yes">yes</label><br />
+        <input type="radio" />
+        <label for="no">no</label><br /><br />
+
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>
